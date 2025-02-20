@@ -106,12 +106,20 @@ function Navbar() {
           </Link>
         </div>
       ) : (
-        <button
-          onClick={() => logOut()}
-          className="px-4 py-1 font-medium text-gray-500 border border-gray-400 rounded-md"
-        >
-          Logout
-        </button>
+        <div className="flex gap-4">
+          <Link
+            to="/hotel/onboarding"
+            className="rounded-md px-4 py-1 border border-[#1570EF] text-[#1570EF] font-medium"
+          >
+            Register Your Property
+          </Link>
+          <button
+            onClick={() => logOut()}
+            className="px-4 py-1 font-medium text-gray-500 border border-gray-400 rounded-md"
+          >
+            Logout
+          </button>
+        </div>
       )}
     </div>
   );
